@@ -20,8 +20,8 @@ if __name__ == '__main__':
 
     print('請按提示輸入文字並設定相關參數，此程式會生成圖片檔並複製到剪貼簿中。')
 
-    print('請輸入文字: ',end='');text = input();print(text)
-    print('聊天室是否為黑色背景?(y/N): ',end='');mode = input();print(mode)
+    text = input('請輸入文字: ');print(text)
+    mode = input('聊天室是否為黑色背景?(y/N): ');print(mode)
     if mode == 'y':ftext = font.render(text, True, WHITE, BLACK)
     else:ftext = font.render(text, True, BLACK, WHITE)
 
